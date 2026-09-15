@@ -1,0 +1,51 @@
+=== Classification report (CNN, ResNet18 transfer learning) ===
+                                                           precision    recall  f1-score   support
+
+                   Amul Ice Cream - Vanilla Magic 1 L Tub       0.50      0.67      0.57         3
+                           Appy Fizz Apple Juice -250 ml-       1.00      1.00      1.00         1
+                                      Badshah Afgani Hing       1.00      1.00      1.00         8
+                Baygon Mosquito - Fly Killer Spray 625 ml       1.00      1.00      1.00         3
+                               Bisleri Club Soda - 750 ml       1.00      1.00      1.00         1
+                   Bisleri Packaged Drinking Water 250 ml       1.00      1.00      1.00         3
+                     Brooke Bond Red Label Leaf Tea 500 g       1.00      0.67      0.80         3
+            Cadbury Bournvita Chocolate Health Drink-1kg-       1.00      1.00      1.00         5
+                          Catch Ginger Garlic Paste 200 g       1.00      1.00      1.00         3
+                     Ching-s secret schezwan fried masala       0.00      0.00      0.00         1
+              Chings Secret Veg Hakka Noodles 140 g Pouch       1.00      1.00      1.00         2
+                                        Coca-Cola-600 ml-       1.00      1.00      1.00         3
+     Dabur Dant Rakshak Ayurvedic Paste 175 g -Pack of 2-       0.25      1.00      0.40         1
+                  Dettol Bathing Soap Bar - Original 125g       1.00      0.75      0.86         4
+                                Everest Chaat Masala 50 g       0.25      0.67      0.36         3
+                             Everest Chicken Masala 100 g       0.50      0.33      0.40         3
+                           Everest Pav Bhaji Masala 100 g       0.67      0.46      0.55        13
+Exo Touch - Shine Anti-Bacterial Round Dishwash Bar 700 g       1.00      1.00      1.00         2
+                Fortune Sunlite Refined Sunflower Oil 5 L       1.00      1.00      1.00         3
+                                         Gokul Milk 500ml       1.00      1.00      1.00         1
+                                                 Gold Oil       1.00      1.00      1.00         4
+                            Govardhan Pure cow Ghee -1kg-       1.00      1.00      1.00         2
+                          Govardhan Pure cow Ghee -200ml-       1.00      1.00      1.00         1
+                    HIT Mosquito - Fly Killer Spray700 ml       1.00      1.00      1.00         1
+                                              Kimia Dates       1.00      0.67      0.80         6
+                                  Knorr Pizza Pasta Sauce       1.00      1.00      1.00         1
+                                 LG Compounded Hing 100 g       1.00      1.00      1.00         3
+                           LG Compounded Hing Powder 50 g       1.00      1.00      1.00         3
+           MAGGI Pichkoo - Rich Tomato Ketchup 80 g Pouch       0.50      1.00      0.67         1
+              Maggi 2-Minute Masala Instant Noodles 280 g       0.00      0.00      0.00         1
+                     Nivea Fresh Natural Deodorant 150 ml       1.00      1.00      1.00         6
+                      Organic India Tulsi Green Tea 100 g       0.60      1.00      0.75         3
+                             Parachute Coconut Oil 300 ml       1.00      1.00      1.00         3
+                    Parachute Coconut Oil 600 ml - Bottle       1.00      1.00      1.00         3
+               Pintola High Protein Peanut Butter-510 gm-       1.00      0.50      0.67         2
+         Pond-s Dreamflower Pink Lily Fragrant Talc 400 g       1.00      1.00      1.00         2
+                  Smith - Jones Ginger Garlic Paste 200 g       1.00      1.00      1.00         3
+     Tata Salt Vacuum Evaporated Iodised Salt  1 kg Pouch       1.00      1.00      1.00         1
+                 Tropicana Fruit Juice - Delight Guava1 L       1.00      1.00      1.00         1
+
+                                                 accuracy                           0.84       113
+                                                macro avg       0.85      0.86      0.84       113
+                                             weighted avg       0.88      0.84      0.84       113
+
+
+=== Model comparison: CNN vs SVM (on 2D PCA features) ===
+Skipping SVM comparison: need at least 2 samples per class in the val set for a train/test split.
+CNN (ResNet18) val accuracy (full feature space): 0.8407

@@ -1,0 +1,41 @@
+PRICE_DICT = {
+    "Amul Ice Cream - Vanilla Magic 1 L Tub": 0,   # TODO: set price
+    "Appy Fizz Apple Juice -250 ml-": 0,   # TODO: set price
+    "Badshah Afgani Hing": 0,   # TODO: set price
+    "Baygon Mosquito - Fly Killer Spray 625 ml": 0,   # TODO: set price
+    "Bisleri Club Soda - 750 ml": 0,   # TODO: set price
+    "Bisleri Packaged Drinking Water 250 ml": 0,   # TODO: set price
+    "Brooke Bond Red Label Leaf Tea 500 g": 0,   # TODO: set price
+    "Cadbury Bournvita Chocolate Health Drink-1kg-": 0,   # TODO: set price
+    "Catch Ginger Garlic Paste 200 g": 0,   # TODO: set price
+    "Ching-s secret schezwan fried masala": 0,   # TODO: set price
+    "Chings Secret Veg Hakka Noodles 140 g Pouch": 0,   # TODO: set price
+    "Coca-Cola-600 ml-": 0,   # TODO: set price
+    "Dabur Dant Rakshak Ayurvedic Paste 175 g -Pack of 2-": 0,   # TODO: set price
+    "Dettol Bathing Soap Bar - Original 125g": 0,   # TODO: set price
+    "Everest Chaat Masala 50 g": 0,   # TODO: set price
+    "Everest Chicken Masala 100 g": 0,   # TODO: set price
+    "Everest Pav Bhaji Masala 100 g": 0,   # TODO: set price
+    "Exo Touch - Shine Anti-Bacterial Round Dishwash Bar 700 g": 0,   # TODO: set price
+    "Fortune Sunlite Refined Sunflower Oil 5 L": 0,   # TODO: set price
+    "Gokul Milk 500ml": 0,   # TODO: set price
+    "Gold Oil": 0,   # TODO: set price
+    "Govardhan Pure cow Ghee -1kg-": 0,   # TODO: set price
+    "Govardhan Pure cow Ghee -200ml-": 0,   # TODO: set price
+    "HIT Mosquito - Fly Killer Spray700 ml": 0,   # TODO: set price
+    "Kimia Dates": 0,   # TODO: set price
+    "Knorr Pizza Pasta Sauce": 0,   # TODO: set price
+    "LG Compounded Hing 100 g": 0,   # TODO: set price
+    "LG Compounded Hing Powder 50 g": 0,   # TODO: set price
+    "MAGGI Pichkoo - Rich Tomato Ketchup 80 g Pouch": 0,   # TODO: set price
+    "Maggi 2-Minute Masala Instant Noodles 280 g": 0,   # TODO: set price
+    "Nivea Fresh Natural Deodorant 150 ml": 0,   # TODO: set price
+    "Organic India Tulsi Green Tea 100 g": 0,   # TODO: set price
+    "Parachute Coconut Oil 300 ml": 0,   # TODO: set price
+    "Parachute Coconut Oil 600 ml - Bottle": 0,   # TODO: set price
+    "Pintola High Protein Peanut Butter-510 gm-": 0,   # TODO: set price
+    "Pond-s Dreamflower Pink Lily Fragrant Talc 400 g": 0,   # TODO: set price
+    "Smith - Jones Ginger Garlic Paste 200 g": 0,   # TODO: set price
+    "Tata Salt Vacuum Evaporated Iodised Salt  1 kg Pouch": 0,   # TODO: set price
+    "Tropicana Fruit Juice - Delight Guava1 L": 0,   # TODO: set price
+}

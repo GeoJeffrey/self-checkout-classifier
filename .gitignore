@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Datasets (too large for git — keep locally or use Git LFS / cloud storage)
+data/
+classification_dataset/
+*.jpg
+*.jpeg
+*.png
+!results/*.png
+
+# Model weights (large binary — use Git LFS if you want to version these)
+models/*.pth
+
+# OS / editor junk
+.DS_Store
+.vscode/
+*.swp
