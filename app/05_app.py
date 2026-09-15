@@ -68,7 +68,7 @@ PRICE_DICT = {
     "Pintola High Protein Peanut Butter-510 gm-": 380,
     "Pond-s Dreamflower Pink Lily Fragrant Talc 400 g": 180,
     "Smith - Jones Ginger Garlic Paste 200 g": 55,
-    "Tata Salt Vacuum Evaporated Iodised Salt 1 kg Pouch": 28,
+    "Tata Salt Vacuum Evaporated Iodised Salt 1 kg Pouch": 25,
     "Tropicana Fruit Juice - Delight Guava1 L": 110,
 }
 # --------------------------------------------------------------------
@@ -127,7 +127,28 @@ def main():
     model = load_model(MODEL_PATH, len(class_names), device)
     transform = get_transform(IMG_SIZE)
 
-    missing_prices = [c for c in class_names if c not in PRICE_DICT]
+    # Normalize keys (strip whitespace, collapse case) so small formatting
+    # differences between class_names.txt and PRICE_DICT don't silently
+    # cause ₹0 prices. Falls back to substring matching for names that still
+    # don't match exactly (handles stray/invisible characters, extra words).
+    def normalize(s):
+        return " ".join(s.strip().split()).lower()
+
+    price_lookup = {normalize(k): v for k, v in PRICE_DICT.items()}
+
+    def get_price(cls_name):
+        norm = normalize(cls_name)
+        if norm in price_lookup:
+            return price_lookup[norm]
+        # Fallback: substring match either direction (handles cases where
+        # class_names.txt has slightly different wording/extra characters
+        # than the PRICE_DICT key).
+        for k, v in price_lookup.items():
+            if k in norm or norm in k:
+                return v
+        return 0
+
+    missing_prices = [c for c in class_names if get_price(c) == 0]
     if missing_prices:
         st.warning(
             f"No price set for {len(missing_prices)} class(es): {missing_prices}. "
@@ -153,7 +174,7 @@ def main():
     if uploaded is not None:
         img = Image.open(uploaded).convert("RGB")
         cls_name, confidence = predict(model, transform, img, class_names, device)
-        price = PRICE_DICT.get(cls_name, 0)
+        price = get_price(cls_name)
 
         col1, col2 = st.columns([1, 2])
         with col1:
