@@ -30,9 +30,9 @@ from sklearn.metrics import classification_report, confusion_matrix, ConfusionMa
 # ----------------------- CONFIG (edit if needed) -----------------------
 CONFIG = {
     "DATA_DIR": "classification_dataset",
-    "MODEL_PATH": "best_model.pth",
-    "CLASS_NAMES_PATH": "class_names.txt",
-    "OUT_DIR": ".",
+    "MODEL_PATH": "models/best_model.pth",
+    "CLASS_NAMES_PATH": "models/class_names.txt",
+    "OUT_DIR": "results",
     "IMG_SIZE": 224,
     "BATCH_SIZE": 32,
 }
